@@ -14,7 +14,7 @@ function checkAnswer() {
     document.getElementById("eventPanel");
 
   // Correct answer
-  if (input === "moon") {
+  if (input === "la blanquette est bonne") {
 
     message.innerHTML =
       "Correct. The event has been revealed.";

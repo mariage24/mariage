@@ -69,7 +69,15 @@ p {
 
 .enigma {
   background:
-    linear-gradient(135deg, #111827, #312e81);
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("assets/images/enigma.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .event {
