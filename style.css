@@ -73,7 +73,7 @@ p {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url("assets/images/enigma.jpg");
+    url("src/blanquette.jpg");
 
   background-size: cover;
   background-position: center;
