@@ -1,0 +1,188 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-y: scroll;
+  background: #0f172a;
+  color: white;
+}
+
+/* PANELS */
+
+.panel {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+  position: relative;
+}
+
+/* CONTENT */
+
+.content {
+  max-width: 700px;
+  text-align: center;
+}
+
+/* TITLES */
+
+h1,
+h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* TEXT */
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* COLORS */
+
+.welcome {
+  background:
+    linear-gradient(135deg, #0f172a, #1e3a8a);
+}
+
+.enigma {
+  background:
+    linear-gradient(135deg, #111827, #312e81);
+}
+
+.event {
+  background:
+    linear-gradient(135deg, #052e16, #166534);
+}
+
+.contact {
+  background:
+    linear-gradient(135deg, #3f0d12, #7f1d1d);
+}
+
+/* INPUT */
+
+input {
+  width: 280px;
+  padding: 14px;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 1rem;
+
+  margin-top: 20px;
+}
+
+/* BUTTON */
+
+button,
+.event-button {
+  display: inline-block;
+
+  margin-top: 20px;
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: white;
+  color: black;
+
+  font-weight: bold;
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+button:hover,
+.event-button:hover {
+  transform: scale(1.05);
+}
+
+/* LOCKED EVENT */
+
+.locked {
+  filter: blur(10px);
+  opacity: 0.3;
+  pointer-events: none;
+
+  transition: 1s;
+}
+
+.unlocked {
+  filter: blur(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* MESSAGE */
+
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* SCROLL INDICATOR */
+
+.scroll-indicator {
+  margin-top: 40px;
+  opacity: 0.6;
+  animation: bounce 2s infinite;
+}
+
+/* ANIMATION */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 100%;
+  }
+}
