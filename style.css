@@ -70,7 +70,8 @@ p {
     ),
     url("src/nous.jpeg");
 
-  /* make image appear slightly smaller so more of the scene is visible */
+  /* keep the background fully covered and clean without borders */
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
