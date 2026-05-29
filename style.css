@@ -64,7 +64,17 @@ p {
 
 .welcome {
   background:
-    linear-gradient(135deg, #0f172a, #1e3a8a);
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("src/nous.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  justify-content: flex-end;
 }
 
 .enigma {
@@ -126,6 +136,11 @@ p {
 
 .event .content p {
   color: #efe1c5;
+}
+
+.logement_et_transport {
+  background:
+    linear-gradient(135deg, #3f0d12, #8d78cd);
 }
 
 .contact {
