@@ -14,7 +14,7 @@ function checkAnswer() {
     document.getElementById("eventPanel");
 
   // Correct answer
-  if (input === "la blanquette est bonne") {
+  if (input === "HR24042027") {
 
     message.innerHTML =
       "Correct. The event has been revealed.";
