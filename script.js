@@ -14,7 +14,7 @@ function checkAnswer() {
     document.getElementById("eventPanel");
 
   // Correct answer
-  if (input === "HR24042027") {
+  if (input === "CM24042027") {
 
     message.innerHTML =
       "Correct. The event has been revealed.";
