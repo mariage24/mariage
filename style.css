@@ -70,6 +70,11 @@ p {
     ),
     url("src/nous.jpeg");
 
+  /* make image appear slightly smaller so more of the scene is visible */
+  background-position: center center;
+  background-repeat: no-repeat;
+
+
 
   justify-content: flex-end;
 }
