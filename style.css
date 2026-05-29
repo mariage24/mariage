@@ -38,15 +38,8 @@ body {
 /* CONTENT */
 
 .content {
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url("src/gros-driou.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  max-width: 700px;
+  text-align: center;
 }
 
 /* TITLES */
@@ -89,7 +82,15 @@ p {
 
 .event {
   background:
-    linear-gradient(135deg, #052e16, #166534);
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("src/gros-driou.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact {
