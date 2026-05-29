@@ -70,9 +70,9 @@ p {
     ),
     url("src/nous.jpeg");
 
-  /* keep the background fully covered and clean without borders */
-  background-size: cover;
-  background-position: center center;
+  /* zoom in the welcome background image */
+  background-size: 120%;
+  background-position: center;
   background-repeat: no-repeat;
 
   justify-content: center;
@@ -90,6 +90,8 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
 .enigma .content {
   margin: 0 auto;
   max-width: 700px;
