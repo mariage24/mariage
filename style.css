@@ -243,37 +243,69 @@ button:hover,
 @media (max-width: 768px) {
 
   .panel {
-    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+    padding: 20px 16px 36px;
+    align-items: flex-start;
   }
 
+  .welcome,
   .enigma,
-  .event {
+  .event,
+  .logement_et_transport,
+  .contact {
     background-position: center top;
     background-size: cover;
   }
 
+  .content {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
   .enigma .content,
-  .event .content {
+  .event .content,
+  .logement_et_transport .content,
+  .contact .content,
+  .welcome .content {
     margin: 0 auto;
     max-width: 100%;
-    padding: 30px;
+    padding: 28px;
     border-radius: 20px;
+    text-align: center;
   }
 
   .event {
     justify-content: center;
   }
 
+  .welcome {
+    justify-content: center;
+  }
+
   h1,
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   p {
     font-size: 1rem;
+    line-height: 1.6;
   }
 
-  input {
+  input,
+  button,
+  .event-button {
     width: 100%;
+  }
+
+  button,
+  .event-button {
+    padding: 16px 20px;
+  }
+
+  .scroll-indicator {
+    margin-top: 24px;
   }
 }
