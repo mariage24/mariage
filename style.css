@@ -70,8 +70,9 @@ p {
     ),
     url("src/nous.jpeg");
 
-  background-size: cover;
-  background-position: center;
+  /* make image appear slightly smaller so more of the scene is visible */
+  background-size: 85%;
+  background-position: center center;
   background-repeat: no-repeat;
 
   justify-content: flex-end;
