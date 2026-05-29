@@ -13,6 +13,9 @@ function checkAnswer() {
   const eventPanel =
     document.getElementById("eventPanel");
 
+  const logementPanel =
+    document.getElementById("logementPanel");
+
   // Correct answer
   if (input === "cm24042027") {
 
@@ -22,9 +25,15 @@ function checkAnswer() {
     message.style.color =
       "#86efac";
 
-    eventPanel.classList.remove("locked");
+    if (eventPanel) {
+      eventPanel.classList.remove("locked");
+      eventPanel.classList.add("unlocked");
+    }
 
-    eventPanel.classList.add("unlocked");
+    if (logementPanel) {
+      logementPanel.classList.remove("locked");
+      logementPanel.classList.add("unlocked");
+    }
 
   } else {
 
