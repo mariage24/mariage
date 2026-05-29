@@ -83,14 +83,35 @@ p {
 .event {
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
     ),
     url("src/gros-driou.jpg");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  justify-content: flex-end;
+}
+
+.event .content {
+  max-width: 560px;
+  text-align: left;
+  margin-right: 8%;
+  padding: 40px;
+  background: rgba(28, 52, 20, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  color: #f7ecda;
+}
+
+.event .content h2 {
+  color: #f4d089;
+}
+
+.event .content p {
+  color: #efe1c5;
 }
 
 .contact {
