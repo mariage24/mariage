@@ -374,7 +374,7 @@ button:hover,
   .panel {
     height: auto;
     min-height: 100vh;
-    padding: 20px 16px 36px;
+    padding: 16px 12px 32px;
     align-items: flex-start;
   }
 
@@ -402,23 +402,44 @@ button:hover,
   .welcome .content {
     margin: 0 auto;
     max-width: 100%;
-    padding: 28px;
-    border-radius: 20px;
+    padding: 24px;
+    border-radius: 16px;
     text-align: center;
   }
 
   /* stack split columns on mobile */
   .logement_et_transport .split {
     display: block;
+    height: auto;
+    gap: 0;
   }
 
   .logement_et_transport .split-left,
   .logement_et_transport .split-right {
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
+    padding: 20px;
   }
+
   .logement_et_transport .split::before {
     display: none;
+  }
+
+  .logement_et_transport .map {
+    min-height: 220px;
+    max-height: 300px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .logement_et_transport .city-list {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .logement_et_transport .city-chip {
+    padding: 6px 10px;
+    font-size: 0.9rem;
   }
 
   .event {
@@ -435,12 +456,12 @@ button:hover,
 
   h1,
   h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 
   input,
@@ -449,12 +470,87 @@ button:hover,
     width: 100%;
   }
 
+  input {
+    padding: 12px;
+    font-size: 16px;
+  }
+
   button,
   .event-button {
-    padding: 16px 20px;
+    padding: 14px 16px;
+    font-size: 0.95rem;
   }
 
   .scroll-indicator {
-    margin-top: 24px;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .logement_et_transport h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .logement_et_transport .shuttle-note {
+    margin-top: 12px;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* EXTRA SMALL SCREENS */
+@media (max-width: 480px) {
+
+  .panel {
+    padding: 12px 8px 24px;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .enigma .content,
+  .event .content,
+  .domaine .content,
+  .logement_et_transport .content,
+  .contact .content,
+  .welcome .content {
+    padding: 16px;
+  }
+
+  .logement_et_transport .split-left,
+  .logement_et_transport .split-right {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .logement_et_transport .map {
+    min-height: 200px;
+    max-height: 250px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  button,
+  .event-button {
+    padding: 12px 12px;
+    font-size: 0.9rem;
+  }
+
+  .logement_et_transport .city-chip {
+    padding: 5px 8px;
+    font-size: 0.85rem;
+  }
+
+  .scroll-indicator {
+    font-size: 0.9rem;
   }
 }
