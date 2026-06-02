@@ -52,3 +52,28 @@ function checkAnswer() {
       "#fca5a5";
   }
 }
+
+// Initialize Leaflet map for logement if available
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof L === "undefined") return;
+
+  const mapEl = document.getElementById("map");
+  if (!mapEl) return;
+
+  const places = [
+    { name: "La Ciotat", coords: [43.1736, 5.6050] },
+    { name: "Cyreste", coords: [43.1769, 5.6190] },
+    { name: "Saint-Cyr-sur-Mer", coords: [43.1709, 5.7048] },
+    { name: "Cuges-Les-Pins", coords: [43.3205, 5.6144] }
+  ];
+
+  const map = L.map(mapEl).setView([43.22, 5.66], 11);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  const markers = places.map(p => L.marker(p.coords).addTo(map).bindPopup(p.name));
+  const group = L.featureGroup(markers);
+  map.fitBounds(group.getBounds().pad(0.3));
+});

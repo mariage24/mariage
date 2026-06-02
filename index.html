@@ -6,6 +6,7 @@
   <title>Camille et Marwen</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 <body>
 
@@ -99,22 +100,22 @@
         <div class="split-left">
           <h2>Transport</h2>
           <p>Pour se rendre au <strong>Domaine du Gros Driou, Chem. de la Garrigue, 13830 Roquefort-la-Bédoule</strong> :</p>
-          <ul>
-            <li>En voiture — GPS : Domaine du Gros Driou</li>
-            <li>Gare la plus proche : La Ciotat</li>
-            <li>Bus / navettes locales selon planning</li>
-          </ul>
+          <p>En voiture — GPS : Domaine du Gros Driou.</p>
+          <p>Gare la plus proche : La Ciotat.</p>
+          <p>Bus / navettes locales selon planning.</p>
           <p class="shuttle-note">Un service de navette sera disponible le jour J. Merci de nous informer à l'avance si vous souhaitez en bénéficier afin que nous puissions l'organiser.</p>
         </div>
 
         <div class="split-right">
           <h2>Logement</h2>
           <p>Communes recommandées pour se loger :</p>
-          <ul>
-            <li>La Ciotat</li>
-            <li>Saint-Cyr-sur-Mer</li>
-            <li>Cuges-Les-Pins</li>
-          </ul>
+          <div id="map" class="map" aria-label="Carte des communes recommandées"></div>
+          <div class="city-list">
+            <div class="city-chip">La Ciotat</div>
+            <div class="city-chip">Cyreste</div>
+            <div class="city-chip">Saint-Cyr-sur-Mer</div>
+            <div class="city-chip">Cuges-Les-Pins</div>
+          </div>
         </div>
 
       </div>
@@ -135,6 +136,7 @@
     </div>
   </section>
 
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 
 </body>
