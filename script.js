@@ -16,11 +16,14 @@ function checkAnswer() {
   const logementPanel =
     document.getElementById("logementPanel");
 
+  const domainePanel =
+    document.getElementById("domainePanel");
+
   // Correct answer
   if (input === "cm24042027") {
 
     message.innerHTML =
-      "Correct. The event has been revealed.";
+      "Bravo. Tu es devenu un vrai cryptographe ! Scroll en bas pour découvrir les détails.";
 
     message.style.color =
       "#86efac";
@@ -35,10 +38,15 @@ function checkAnswer() {
       logementPanel.classList.add("unlocked");
     }
 
+    if (domainePanel) {
+      domainePanel.classList.remove("locked");
+      domainePanel.classList.add("unlocked");
+    }
+
   } else {
 
     message.innerHTML =
-      "Wrong answer.";
+      "Pas de chance. Réessaie !";
 
     message.style.color =
       "#fca5a5";

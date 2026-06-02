@@ -141,6 +141,55 @@ p {
   color: #efe1c5;
 }
 
+.event {
+  background:
+    linear-gradient(135deg, #3f0d12, #7f1d1d);
+  justify-content: center;
+}
+
+.event .content {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  color: #f8f4e9;
+}
+
+.domaine {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("src/gros-driou.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+}
+
+.domaine .content {
+  max-width: 560px;
+  text-align: left;
+  margin-right: 8%;
+  padding: 40px;
+  background: rgba(28, 52, 20, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  color: #f7ecda;
+}
+
+.domaine .content h2 {
+  color: #f4d089;
+}
+
+.domaine .content p {
+  color: #efe1c5;
+}
+
 .logement_et_transport {
   background:
     linear-gradient(135deg, #3f0d12, #8d78cd);
@@ -252,6 +301,7 @@ button:hover,
   .welcome,
   .enigma,
   .event,
+  .domaine,
   .logement_et_transport,
   .contact {
     background-position: center top;
@@ -266,6 +316,7 @@ button:hover,
 
   .enigma .content,
   .event .content,
+  .domaine .content,
   .logement_et_transport .content,
   .contact .content,
   .welcome .content {
@@ -277,6 +328,10 @@ button:hover,
   }
 
   .event {
+    justify-content: center;
+  }
+
+  .domaine {
     justify-content: center;
   }
 
