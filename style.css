@@ -215,8 +215,8 @@ p {
 .logement_et_transport .split-right {
   flex: 1 1 0;
   padding: 40px;
-  background: rgba(255,255,255,0.03);
-  border-radius: 12px;
+  background: transparent;
+  border-radius: 0;
   overflow: auto;
 }
 
