@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!mapEl) return;
 
   const places = [
-    { name: "La Ciotat", coords: [43.1736, 5.6050] },
-    { name: "Cyreste", coords: [43.1249, 5.3751] },
-    { name: "Saint-Cyr-sur-Mer", coords: [43.1051, 5.4148] },
-    { name: "Cuges-Les-Pins", coords: [43.1633, 5.4201] }
+    { name: "La Ciotat", coords: [43.1758, 5.6061] },
+    { name: "Cyreste", coords: [43.2183, 5.6391] },
+    { name: "Saint-Cyr-sur-Mer", coords: [43.1811, 5.6965] },
+    { name: "Cuges-Les-Pins", coords: [43.2749, 5.7015] }
   ];
 
   const map = L.map(mapEl).setView([43.22, 5.66], 11);
