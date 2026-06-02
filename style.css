@@ -208,6 +208,7 @@ p {
   gap: 32px;
   align-items: stretch;
   height: calc(100vh - 80px);
+  position: relative;
 }
 
 .logement_et_transport .split-left,
@@ -217,6 +218,18 @@ p {
   background: rgba(255,255,255,0.03);
   border-radius: 12px;
   overflow: auto;
+}
+
+/* vertical divider in the middle */
+.logement_et_transport .split::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 16px;
+  bottom: 16px;
+  width: 1px;
+  transform: translateX(-0.5px);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.06), rgba(255,255,255,0.12));
 }
 
 .logement_et_transport h2 {
@@ -403,6 +416,9 @@ button:hover,
   .logement_et_transport .split-right {
     width: 100%;
     margin-bottom: 18px;
+  }
+  .logement_et_transport .split::before {
+    display: none;
   }
 
   .event {

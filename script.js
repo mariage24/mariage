@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const places = [
     { name: "La Ciotat", coords: [43.1736, 5.6050] },
-    { name: "Cyreste", coords: [43.1769, 5.6190] },
-    { name: "Saint-Cyr-sur-Mer", coords: [43.1709, 5.7048] },
-    { name: "Cuges-Les-Pins", coords: [43.3205, 5.6144] }
+    { name: "Cyreste", coords: [43.1249, 5.3751] },
+    { name: "Saint-Cyr-sur-Mer", coords: [43.1051, 5.4148] },
+    { name: "Cuges-Les-Pins", coords: [43.1633, 5.4201] }
   ];
 
   const map = L.map(mapEl).setView([43.22, 5.66], 11);
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  const markers = places.map(p => L.marker(p.coords).addTo(map).bindPopup(p.name));
+  const markers = places.map(p => L.marker(p.coords).addTo(map));
   const group = L.featureGroup(markers);
   map.fitBounds(group.getBounds().pad(0.3));
 });
