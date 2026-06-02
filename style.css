@@ -195,6 +195,44 @@ p {
     linear-gradient(135deg, #3f0d12, #8d78cd);
 }
 
+/* Split layout for transport / logement */
+.logement_et_transport .content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.logement_et_transport .split {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.logement_et_transport .split-left,
+.logement_et_transport .split-right {
+  flex: 1 1 0;
+}
+
+.logement_et_transport h2 {
+  margin-bottom: 12px;
+}
+
+.logement_et_transport ul {
+  margin-left: 18px;
+}
+
+.logement_et_transport .shuttle-note {
+  margin-top: 18px;
+  padding: 12px;
+  background: rgba(247, 209, 160, 0.06);
+  border-radius: 12px;
+  color: #f7d1a0;
+  font-weight: 600;
+}
+
 .contact {
   background:
     linear-gradient(135deg, #3f0d12, #7f1d1d);
@@ -325,6 +363,17 @@ button:hover,
     padding: 28px;
     border-radius: 20px;
     text-align: center;
+  }
+
+  /* stack split columns on mobile */
+  .logement_et_transport .split {
+    display: block;
+  }
+
+  .logement_et_transport .split-left,
+  .logement_et_transport .split-right {
+    width: 100%;
+    margin-bottom: 18px;
   }
 
   .event {
