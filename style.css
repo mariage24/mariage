@@ -85,7 +85,7 @@ p {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url("src/arenes.jpg");
+    url("src/arenes2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -112,7 +112,8 @@ p {
     linear-gradient(
       rgba(224, 243, 241, 0.35),
       rgba(0, 0, 0, 0.35)
-    );
+    ),
+    url("src/mugel.jpg");
 
   background-size: cover;
   background-position: center;
