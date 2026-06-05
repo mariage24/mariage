@@ -109,18 +109,16 @@ p {
 }
 .event {
   background:
-    linear-gradient(
-      rgba(224, 243, 241, 0.35),
-      rgba(0, 0, 0, 0.35)
-    ),
+    linear-gradient(135deg, #3f0d12, #4754cd),
     url("src/mugel.jpg");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  justify-content: flex-end;
+  justify-content: center;
 }
+
 
 .event .content {
   max-width: 560px;
@@ -153,11 +151,6 @@ p {
   text-decoration: underline;
 }
 
-.event {
-  background:
-    linear-gradient(135deg, #3f0d12, #4754cd);
-  justify-content: center;
-}
 
 .event .content {
   max-width: 700px;
