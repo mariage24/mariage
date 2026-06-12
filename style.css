@@ -525,6 +525,16 @@ button:hover,
     padding: 10px;
     font-size: 0.9rem;
   }
+
+  .event .content h3,
+  .domaine .content h3 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  .logement_et_transport h3 {
+    font-size: 1.4rem;
+  }
 }
 
 /* EXTRA SMALL SCREENS */
@@ -581,5 +591,14 @@ button:hover,
 
   .scroll-indicator {
     font-size: 0.9rem;
+  }
+
+  .event .content h3,
+  .domaine .content h3 {
+    font-size: 0.9rem;
+  }
+
+  .logement_et_transport h3 {
+    font-size: 1.2rem;
   }
 }
