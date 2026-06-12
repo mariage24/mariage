@@ -78,6 +78,10 @@ p {
   justify-content: center;
 }
 
+.welcome .content p:first-child {
+  font-size: 1.8rem;
+}
+
 .enigma {
 
   background:
@@ -369,6 +373,7 @@ button:hover,
   margin-top: 40px;
   opacity: 0.6;
   animation: bounce 2s infinite;
+  font-size: 2.5rem;
 }
 
 /* ANIMATION */
