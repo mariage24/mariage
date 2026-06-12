@@ -258,6 +258,11 @@ p {
   margin-bottom: 12px;
 }
 
+.logement_et_transport h3 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
 .logement_et_transport ul {
   margin-left: 18px;
 }
