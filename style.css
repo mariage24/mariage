@@ -129,8 +129,8 @@ p {
 
 .event .content {
   max-width: 560px;
-  text-align: left;
-  margin-right: 8%;
+  text-align: center;
+  margin: 0 auto;
   padding: 40px;
   background: rgba(28, 52, 20, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -190,13 +190,13 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .domaine .content {
   max-width: 560px;
-  text-align: left;
-  margin-right: 8%;
+  text-align: center;
+  margin: 0 auto;
   padding: 40px;
   background: rgba(28, 52, 20, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.12);
