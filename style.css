@@ -79,7 +79,7 @@ p {
 }
 
 .welcome .content p:first-child {
-  font-size: 1.8rem;
+  font-size: 1.0rem;
 }
 
 .enigma {
@@ -374,6 +374,7 @@ button:hover,
   opacity: 0.6;
   animation: bounce 2s infinite;
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 /* ANIMATION */
